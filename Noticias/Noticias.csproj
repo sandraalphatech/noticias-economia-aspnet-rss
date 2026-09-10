@@ -1,0 +1,221 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5E76F4A-EE0F-4318-977D-B14094B3597A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Noticias</RootNamespace>
+    <AssemblyName>Noticias</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44370</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\main.css" />
+    <Content Include="js\main.js" />
+    <Content Include="Noticias.aspx" />
+    <Content Include="noticias_formatacao.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="vendor\aos\aos.cjs.js" />
+    <Content Include="vendor\aos\aos.css" />
+    <Content Include="vendor\aos\aos.esm.js" />
+    <Content Include="vendor\aos\aos.js" />
+    <Content Include="vendor\bootstrap-icons\bootstrap-icons.css" />
+    <Content Include="vendor\bootstrap-icons\bootstrap-icons.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.esm.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\glightbox\css\glightbox.css" />
+    <Content Include="vendor\glightbox\css\glightbox.min.css" />
+    <Content Include="vendor\glightbox\js\glightbox.js" />
+    <Content Include="vendor\glightbox\js\glightbox.min.js" />
+    <Content Include="vendor\php-email-form\validate.js" />
+    <Content Include="vendor\purecounter\purecounter_vanilla.js" />
+    <Content Include="vendor\swiper\swiper-bundle.min.css" />
+    <Content Include="vendor\swiper\swiper-bundle.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Noticias.aspx.cs">
+      <DependentUpon>Noticias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Noticias.aspx.designer.cs">
+      <DependentUpon>Noticias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\blog\blog-hero-2.webp" />
+    <Content Include="img\blog\blog-post-1.webp" />
+    <Content Include="img\blog\blog-post-10.webp" />
+    <Content Include="img\blog\blog-post-2.webp" />
+    <Content Include="img\blog\blog-post-3.webp" />
+    <Content Include="img\blog\blog-post-4.webp" />
+    <Content Include="img\blog\blog-post-5.webp" />
+    <Content Include="img\blog\blog-post-6.webp" />
+    <Content Include="img\blog\blog-post-7.webp" />
+    <Content Include="img\blog\blog-post-9.webp" />
+    <Content Include="img\blog\blog-post-portrait-1.webp" />
+    <Content Include="img\blog\blog-post-portrait-2.webp" />
+    <Content Include="img\blog\blog-post-portrait-3.webp" />
+    <Content Include="img\blog\blog-post-portrait-4.webp" />
+    <Content Include="img\blog\blog-post-portrait-5.webp" />
+    <Content Include="img\blog\blog-post-square-1.webp" />
+    <Content Include="img\blog\blog-post-square-2.webp" />
+    <Content Include="img\blog\blog-post-square-3.webp" />
+    <Content Include="img\blog\blog-post-square-4.webp" />
+    <Content Include="img\blog\blog-post-square-5.webp" />
+    <None Include="packages.config" />
+    <Content Include="vendor\aos\aos.js.map" />
+    <Content Include="vendor\bootstrap-icons\bootstrap-icons.json" />
+    <Content Include="vendor\bootstrap-icons\bootstrap-icons.scss" />
+    <Content Include="vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <Content Include="vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="vendor\purecounter\purecounter_vanilla.js.map" />
+    <Content Include="vendor\swiper\swiper-bundle.min.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53219</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44370/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+</Project>
